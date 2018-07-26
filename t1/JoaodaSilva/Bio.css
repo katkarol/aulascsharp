@@ -1,0 +1,151 @@
+﻿
+main h1 {
+    font-size: 60px;
+    background-color: rgb(133, 25, 68);
+    color: rgb(250, 255, 250);
+    text-align: center;
+    font-family: "Open Sans Condense", sans-serif;
+    padding: 25px;
+    margin: 0px;
+    border-bottom:10px solid #000000; 
+    text-transform: uppercase;
+}
+h1, h2 {
+    font-size: 30px;
+    font-family: 'Open Sans Condense',sans-serif;
+}
+h2 {
+    clear: both;
+}
+body {
+    font-family: 'Crimson Text', serif;
+    background-color: #F2FFFC;
+    font-size: 120%;
+    line-height:1.5;
+}
+p {
+    text-align: justify;
+    margin: 20px 0;
+}
+blockquote {
+    background-color: #D9E5E3;
+    padding: 20px;
+    border: 10px solid #C2CCCA;
+    width: 250px;
+    box-sizing: border-box;
+    margin: 20px 40px;
+}
+aside {
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    text-align: center;
+    clear: right;
+    position: relative;
+    top: 230px;
+}
+footer {
+    background-color: #000;
+    color: #F2FFFC;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav a {
+    color: #F2FFFC;
+    text-transform: lowercase;
+}
+aside a {
+    color:inherit;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+main a {
+    color: #851944;
+}
+ul {
+    color: pink;
+    padding: 5px;
+}
+
+    ul li a {
+        color: inherit;
+    }
+main div {
+    width: 720px;
+    margin: auto;
+    padding: 30px 0;
+}
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+.icones-sociais li{
+    display: inline-block;
+}
+.leia-mais {
+    padding: 8px;
+    margin: 16px;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    background-color: #E6E7E8;
+}
+.icones-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+.github {
+    background-image: url(github.png);
+}
+
+.twitter {
+    background-image: url(twitter.png);
+}
+
+.linkedin {
+    background-image: url(linkedin.png);
+}
+.citacao-fiat {
+    float: right;
+}
+.citacao-petrobras{
+    float:left;
+}
+cite {
+    font-style: italic;
+    float: right;
+}
+main {
+    width: 85%;
+    float: left;
+    padding-bottom: 80px;
+}
+
+img, aside {
+    width: 20%;
+    float: right;
+}
+
+
+.minha-foto, .navegacao-site {
+    float: right;
+    width: 15%;
+    box-sizing: border-box;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+}
+.minha-foto {
+    width: 230px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+

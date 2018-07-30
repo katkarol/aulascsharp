@@ -1,0 +1,15 @@
+﻿.propriedades-portifolio li {
+    display: inline-block;
+    border: 8px solid black;
+    background-color: #FAFFFC;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.propriedades-portifolio img {
+    width: 100%;
+}
+
+

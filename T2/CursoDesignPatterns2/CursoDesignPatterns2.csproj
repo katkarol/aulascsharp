@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D89C4B31-CFEA-44DC-B3D5-DB1BBCBD5E51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CursoDesignPatterns2</RootNamespace>
+    <AssemblyName>CursoDesignPatterns2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculadora\Divisao.cs" />
+    <Compile Include="Calculadora\IExpressao.cs" />
+    <Compile Include="Calculadora\Multiplicacao.cs" />
+    <Compile Include="Calculadora\Numero.cs" />
+    <Compile Include="Calculadora\RaizQuadrada.cs" />
+    <Compile Include="Calculadora\Soma.cs" />
+    <Compile Include="Calculadora\Subtracao.cs" />
+    <Compile Include="Contrato\Contrato.cs" />
+    <Compile Include="Contrato\Estado.cs" />
+    <Compile Include="Contrato\Historico.cs" />
+    <Compile Include="Contrato\TipoContrato.cs" />
+    <Compile Include="Factory\ConnectionFactory.cs" />
+    <Compile Include="Musica\Do.cs" />
+    <Compile Include="Musica\Fa.cs" />
+    <Compile Include="Musica\INota.cs" />
+    <Compile Include="Musica\La.cs" />
+    <Compile Include="Musica\Mi.cs" />
+    <Compile Include="Musica\NotasMusicais.cs" />
+    <Compile Include="Musica\Piano.cs" />
+    <Compile Include="Musica\Re.cs" />
+    <Compile Include="Musica\Si.cs" />
+    <Compile Include="Musica\Sol.cs" />
+    <Compile Include="Musica\Testando.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

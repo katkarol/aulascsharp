@@ -42,12 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContaBancaria\EstadoConta.cs" />
+    <Compile Include="ContaBancaria\Negativo.cs" />
+    <Compile Include="ContaBancaria\Positivo.cs" />
     <Compile Include="EstadosOrcamentos\Aprovado.cs" />
     <Compile Include="Investimento\Arrojado.cs" />
     <Compile Include="Desconto\CalculadorDescontos.cs" />
     <Compile Include="Impostos\CalcularImpostos.cs" />
     <Compile Include="Investimento\Conservador.cs" />
-    <Compile Include="Conta.cs" />
+    <Compile Include="ContaBancaria\Conta.cs" />
     <Compile Include="Desconto\Desconto.cs" />
     <Compile Include="Desconto\DescontoCincoItens.cs" />
     <Compile Include="Desconto\DescontoMais500Reais.cs" />
@@ -66,6 +69,16 @@
     <Compile Include="Impostos\ISS.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Investimento\Moderado.cs" />
+    <Compile Include="NotaFiscal\AcaoAposGerarNota.cs" />
+    <Compile Include="NotaFiscal\CriadaorNotaFiscal.cs" />
+    <Compile Include="NotaFiscal\EnviadorEmail.cs" />
+    <Compile Include="NotaFiscal\EnviadorSMS.cs" />
+    <Compile Include="NotaFiscal\ItemDaNota.cs" />
+    <Compile Include="NotaFiscal\ItemDaNotaBuilder.cs" />
+    <Compile Include="NotaFiscal\Multiplicador.cs" />
+    <Compile Include="NotaFiscal\NotaFiscal.cs" />
+    <Compile Include="NotaFiscal\NotaFiscalBuilder.cs" />
+    <Compile Include="NotaFiscal\NotaFiscalDAO.cs" />
     <Compile Include="Orcamento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +90,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CursoDesignPatterns2\CursoDesignPatterns2.csproj">
+      <Project>{D89C4B31-CFEA-44DC-B3D5-DB1BBCBD5E51}</Project>
+      <Name>CursoDesignPatterns2</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

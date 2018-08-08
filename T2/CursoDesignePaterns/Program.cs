@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CursoDesignPatterns2.Musica;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace CursoDesignePaterns
     {
         static void Main(string[] args)
         {
+            Piano piano = new Piano();
+            piano.Toca(Testando.DoReMiFa());
         }
     }
 }

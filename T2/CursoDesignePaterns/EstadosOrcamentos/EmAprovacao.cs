@@ -8,9 +8,18 @@ namespace CursoDesignePaterns
 {
     public class EmAprovacao : EstadoOrcamento
     {
+        bool descontoAplicado = false;
         public void AplicarDescontoExtra(Orcamento orcamento)
         {
-            orcamento.Valor -= orcamento.Valor * 0.05;
+            if (!this.descontoAplicado)
+            {
+                orcamento.Valor -= orcamento.Valor * 0.05;
+                descontoAplicado = true;
+            }
+            else
+            {
+                throw new Exception("O desconto já foi aplicado.");
+            }
         }
 
         public void Aprovar(Orcamento orcamento)

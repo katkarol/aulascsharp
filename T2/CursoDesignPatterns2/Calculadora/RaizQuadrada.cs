@@ -6,19 +6,24 @@ using System.Threading.Tasks;
 
 namespace CursoDesignPatterns2.Calculadora
 {
-    class RaizQuadrada :IExpressao
+    public class RaizQuadrada :IExpressao
     {
-        private IExpressao esquerda;
+        public IExpressao Esquerda { get; private set; }
 
         public RaizQuadrada(IExpressao esquerda)
         {
-            this.esquerda = esquerda;
+            this.Esquerda = esquerda;
         }
 
         public double Avalia()
         {
-            double resultadoDaEsquerda = esquerda.Avalia();
+            double resultadoDaEsquerda = Esquerda.Avalia();
             return Math.Sqrt(resultadoDaEsquerda);
+        }
+
+        public void Aceita(IVisitor visitor)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Calculadora\Divisao.cs" />
     <Compile Include="Calculadora\IExpressao.cs" />
+    <Compile Include="Calculadora\Impressora.cs" />
+    <Compile Include="Calculadora\IVisitor.cs" />
     <Compile Include="Calculadora\Multiplicacao.cs" />
     <Compile Include="Calculadora\Numero.cs" />
     <Compile Include="Calculadora\RaizQuadrada.cs" />
@@ -54,6 +56,12 @@
     <Compile Include="Contrato\Historico.cs" />
     <Compile Include="Contrato\TipoContrato.cs" />
     <Compile Include="Factory\ConnectionFactory.cs" />
+    <Compile Include="Mensagem\EnviaPorEmail.cs" />
+    <Compile Include="Mensagem\EnviaPorSMS.cs" />
+    <Compile Include="Mensagem\IEnviador.cs" />
+    <Compile Include="Mensagem\IMensagem.cs" />
+    <Compile Include="Mensagem\MensagemAdministrativa.cs" />
+    <Compile Include="Mensagem\MensagemCliente.cs" />
     <Compile Include="Musica\Do.cs" />
     <Compile Include="Musica\Fa.cs" />
     <Compile Include="Musica\INota.cs" />

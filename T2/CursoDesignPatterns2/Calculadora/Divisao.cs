@@ -6,22 +6,27 @@ using System.Threading.Tasks;
 
 namespace CursoDesignPatterns2.Calculadora
 {
-    class Divisao : IExpressao
+    public class Divisao : IExpressao
     {
-        private IExpressao esquerda;
-        private IExpressao direita;
+        public IExpressao Esquerda { get; private set; }
+        public IExpressao Direita { get; private set; }
 
         public Divisao(IExpressao esquerda, IExpressao direita)
         {
-            this.esquerda = esquerda;
-            this.direita = direita;
+            this.Esquerda = esquerda;
+            this.Direita = direita;
         }
 
         public double Avalia()
         {
-            double resultadoDaEsquerda = esquerda.Avalia();
-            double resultadoDaDireita = direita.Avalia();
+            double resultadoDaEsquerda = Esquerda.Avalia();
+            double resultadoDaDireita = Direita.Avalia();
             return resultadoDaEsquerda / resultadoDaDireita;
+        }
+
+        public void Aceita(IVisitor visitor)
+        {
+            visitor.ImprimeDivisao(this);
         }
     }
 }

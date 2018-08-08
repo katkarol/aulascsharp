@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CursoDesignPatterns2.Calculadora
 {
-    interface IExpressao
+    public interface IExpressao
     {
         double Avalia();
+        void Aceita(IVisitor visitor);
     }
 }

@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace CursoDesignPatterns2.Calculadora
 {
-    class Numero :IExpressao
+    public class Numero :IExpressao
     {
-        private double numero;
+        public double Valor { get; private set; }
         public Numero(double numero)
         {
-            this.numero = numero;
+            this.Valor = numero;
         }
         public double Avalia()
         {
-            return numero;
+            return Valor;
+        }
+
+        public void Aceita(IVisitor visitor)
+        {
+            visitor.ImprimeNumero(this);
         }
     }
 }

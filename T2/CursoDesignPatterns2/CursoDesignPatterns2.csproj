@@ -55,6 +55,12 @@
     <Compile Include="Contrato\Estado.cs" />
     <Compile Include="Contrato\Historico.cs" />
     <Compile Include="Contrato\TipoContrato.cs" />
+    <Compile Include="Empresa\ClienteDao.cs" />
+    <Compile Include="Empresa\Cobranca.cs" />
+    <Compile Include="Empresa\ContatoCliente.cs" />
+    <Compile Include="Empresa\EmpresaFacade.cs" />
+    <Compile Include="Empresa\EmpresaFacadeSingleton.cs" />
+    <Compile Include="Empresa\Fatura.cs" />
     <Compile Include="Factory\ConnectionFactory.cs" />
     <Compile Include="Mensagem\EnviaPorEmail.cs" />
     <Compile Include="Mensagem\EnviaPorSMS.cs" />
@@ -73,7 +79,15 @@
     <Compile Include="Musica\Si.cs" />
     <Compile Include="Musica\Sol.cs" />
     <Compile Include="Musica\Testando.cs" />
+    <Compile Include="Pedidos\FilaPedido.cs" />
+    <Compile Include="Pedidos\FinalizaPedido.cs" />
+    <Compile Include="Pedidos\IComando.cs" />
+    <Compile Include="Pedidos\PagaPedido.cs" />
+    <Compile Include="Pedidos\Pedido.cs" />
+    <Compile Include="Pedidos\Status.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XML\Cliente.cs" />
+    <Compile Include="XML\GeradorXML.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <None Remove="Assets\js\main.js" />
+    <None Remove="View\Cambio\Calcular.html" />
     <None Remove="View\Cambio\MXN.html" />
     <None Remove="View\Cambio\USD.html" />
     <None Remove="View\Cartoes\Credito.html" />
@@ -17,6 +18,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Assets\js\main.js" />
+    <EmbeddedResource Include="View\Cambio\Calcular.html" />
     <EmbeddedResource Include="View\Cambio\MXN.html" />
     <EmbeddedResource Include="View\Cambio\USD.html" />
     <EmbeddedResource Include="View\Cartoes\Credito.html" />
@@ -27,6 +29,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CursoReflectionDotNetService\CursoReflectionDotNetService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

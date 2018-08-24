@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CursoReflectionDotNet.Infraestrutura
 {
-    public static class Utilidade
+    public static class Utilidades
     {
         public static bool EhArquivo(string path)
         {

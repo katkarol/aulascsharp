@@ -39,7 +39,6 @@ h2 {
 }
 img, aside {
     width: 20%;
-    float: right;
 }
 main {
     width: 85%;
@@ -67,7 +66,6 @@ main h1 {
 }
 nav a {
     color: #F2FFFC;
-    text-transform: lowercase;
 }
 p {
     text-align: justify;
@@ -100,10 +98,11 @@ ul li a {
     background-image: url(linkedin.png);
 }
 .minha-foto {
-    width: 230px;
+    width: 300px;
     position: absolute;
     top: 0;
     right: 0;
+    float: right;
 }
 .minha-foto, .navegacao-site {
     float: right;

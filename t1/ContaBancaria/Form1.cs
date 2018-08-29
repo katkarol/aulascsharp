@@ -14,7 +14,6 @@ namespace ContaBancaria
     {
         List<Conta> aConta;
         int operacao;
-        private Button btnCadstrar;
         int qtdContas;
         public Form1()
         {

@@ -44,6 +44,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtNomeAtualizar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnComprar = new System.Windows.Forms.Button();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtPrecoUnitario = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCategoriaCompra = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtUnidade = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtQuantidade = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -179,11 +194,156 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Nome ";
             // 
+            // btnComprar
+            // 
+            this.btnComprar.Location = new System.Drawing.Point(739, 324);
+            this.btnComprar.Name = "btnComprar";
+            this.btnComprar.Size = new System.Drawing.Size(75, 23);
+            this.btnComprar.TabIndex = 16;
+            this.btnComprar.Text = "Comprar";
+            this.btnComprar.UseVisualStyleBackColor = true;
+            this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
+            // 
+            // txtProduto
+            // 
+            this.txtProduto.Location = new System.Drawing.Point(748, 67);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(100, 20);
+            this.txtProduto.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(748, 49);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 13);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Produto";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(748, 103);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(71, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "PrecoUnitario";
+            // 
+            // txtPrecoUnitario
+            // 
+            this.txtPrecoUnitario.Location = new System.Drawing.Point(748, 121);
+            this.txtPrecoUnitario.Name = "txtPrecoUnitario";
+            this.txtPrecoUnitario.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecoUnitario.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(745, 149);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 13);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Categoria";
+            // 
+            // txtCategoriaCompra
+            // 
+            this.txtCategoriaCompra.Location = new System.Drawing.Point(745, 167);
+            this.txtCategoriaCompra.Name = "txtCategoriaCompra";
+            this.txtCategoriaCompra.Size = new System.Drawing.Size(100, 20);
+            this.txtCategoriaCompra.TabIndex = 21;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(742, 201);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(47, 13);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Unidade";
+            // 
+            // txtUnidade
+            // 
+            this.txtUnidade.Location = new System.Drawing.Point(742, 219);
+            this.txtUnidade.Name = "txtUnidade";
+            this.txtUnidade.Size = new System.Drawing.Size(100, 20);
+            this.txtUnidade.TabIndex = 23;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(739, 252);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(62, 13);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "Quantidade";
+            // 
+            // txtQuantidade
+            // 
+            this.txtQuantidade.Location = new System.Drawing.Point(739, 270);
+            this.txtQuantidade.Name = "txtQuantidade";
+            this.txtQuantidade.Size = new System.Drawing.Size(100, 20);
+            this.txtQuantidade.TabIndex = 25;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(926, 65);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(359, 236);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(322, 362);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(274, 142);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1101, 450);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtQuantidade);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtUnidade);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtCategoriaCompra);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtPrecoUnitario);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtProduto);
+            this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.txtCategoriaAtualizar);
             this.Controls.Add(this.label5);
@@ -225,5 +385,20 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNomeAtualizar;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnComprar;
+        private System.Windows.Forms.TextBox txtProduto;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtPrecoUnitario;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtCategoriaCompra;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtUnidade;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtQuantidade;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

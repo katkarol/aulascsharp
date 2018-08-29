@@ -22,7 +22,7 @@ namespace ContaBancaria
         {
             int indiceSelecionado = cmbContas.SelectedIndex;
             Conta cselecionada = aConta[indiceSelecionado];
-            txtTitular.Text = cselecionada.Titular;
+            txtTitular.Text = cselecionada.Titular.Nome;
             txtNumero.Text = cselecionada.ToString();
             txtSaldo.Text = cselecionada.ToString();
 
@@ -30,12 +30,12 @@ namespace ContaBancaria
 
         private void MostrarInformacaoCombo_Load(object sender, EventArgs e)
         {
-            Conta cVictor = new Conta();
-            cVictor.Titular = "Victor";
+            Conta cVictor = new ContaPoupanca();
+            cVictor.Titular.Nome = "Victor";
             cVictor.Numero = 1;
 
-            Conta cMario = new Conta();
-            cMario.Titular = "Mario";
+            Conta cMario = new ContaPoupanca();
+            cMario.Titular.Nome = "Mario";
             cMario.Numero = 2;
 
             this.aConta = new Conta[2];

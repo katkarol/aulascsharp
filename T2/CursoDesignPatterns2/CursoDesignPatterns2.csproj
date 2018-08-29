@@ -61,6 +61,7 @@
     <Compile Include="Empresa\EmpresaFacade.cs" />
     <Compile Include="Empresa\EmpresaFacadeSingleton.cs" />
     <Compile Include="Empresa\Fatura.cs" />
+    <Compile Include="Empresa\ServicoSingleton.cs" />
     <Compile Include="Factory\ConnectionFactory.cs" />
     <Compile Include="Mensagem\EnviaPorEmail.cs" />
     <Compile Include="Mensagem\EnviaPorSMS.cs" />

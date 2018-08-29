@@ -35,7 +35,7 @@ namespace CursoDesignPatterns2.Empresa
         }
     }
 
-    enum Tipo
+    public enum Tipo
     {
         Boleto
     }
